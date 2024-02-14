@@ -1,7 +1,9 @@
 Sphere class
 
 attributes:
-origin (double[])
+this.xValue (double)
+this.yValue (double)
+this.zValue (double)
 radius (double)
 
 methods:
