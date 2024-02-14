@@ -39,4 +39,12 @@ public class Sphere {
     public double getVolume(){
         return (double) 4 /3 * Math.PI * Math.pow(radius, 3);
     }
+
+    public double distanceTo(Sphere Sphere2) {
+        return Math.sqrt(Math.pow(xValue-Sphere2.xValue, 2) + Math.pow(yValue-Sphere2.yValue, 2) + Math.pow(zValue-Sphere2.zValue, 2));
+    }
+
+    public boolean intersectsWith(Sphere Sphere2) {
+        return this.distanceTo(Sphere2) <= radius + Sphere2.radius;
+    }
 }
