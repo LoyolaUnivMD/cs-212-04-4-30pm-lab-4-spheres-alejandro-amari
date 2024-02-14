@@ -1,1 +1,13 @@
-Test Cases go here.
+Sphere1
+  origin: {0, 0, 0}
+  radius: 25
+
+Sphere2
+  origin: {12, 16, 15}
+  radius: 0
+
+Test cases:
+  Shpere2 volume: 0
+  Sphere1 surfaceArea: 7853.9816
+  Sphere1 distance to Sphere2: 25
+  Sphere1 intersects with Sphere2: true
