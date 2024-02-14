@@ -1,1 +1,11 @@
- Design goes here
+Sphere class
+
+attributes:
+origin (double)
+radius (double)
+
+methods:
+surfaceArea
+volume
+distanceTo
+intersectsWith
