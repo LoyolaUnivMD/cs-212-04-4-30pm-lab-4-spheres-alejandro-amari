@@ -24,14 +24,14 @@ class Main {
        System.out.println("The Earth's area is " + earth.getArea() + " and it's volume is " + earth.getVolume());
        System.out.println("Planet X's area is " + planetX.getArea() + " and it's volume is " + planetX.getVolume());
 
-       if(earth.intersectsWith(sun) || earth.intersectsWith(planetX)){
-           System.out.println("Earth is crashing into another planet");
+       if(earth.intersectsWith(sun)){
+           System.out.println("Earth is crashing into the sun.");
        }
-       if(sun.intersectsWith(earth) || sun.intersectsWith(planetX)){
-            System.out.println("The sun is crashing into another planet");
+       if(sun.intersectsWith(planetX)){
+            System.out.println("The sun is crashing into planet X.");
         }
-        if(planetX.intersectsWith(earth) || planetX.intersectsWith(sun)){
-            System.out.println("Planet X is crashing into another planet");
+        if(planetX.intersectsWith(earth)){
+            System.out.println("Planet X is crashing into the Earth.");
         }
 
     }
