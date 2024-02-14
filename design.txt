@@ -1,11 +1,11 @@
 Sphere class
 
 attributes:
-origin (double)
+origin (double[])
 radius (double)
 
 methods:
-surfaceArea
-volume
-distanceTo
-intersectsWith
+surfaceArea(double) - plugs it into the formula
+volume(double) - plugs it into the formula
+distanceTo(Sphere) - takes [Sphere].origin and computes the distance using the math module for the sqrt
+intersectsWith(Sphere) - returns this.distanceTo([Sphere]) > this.radius + [Sphere].radius
