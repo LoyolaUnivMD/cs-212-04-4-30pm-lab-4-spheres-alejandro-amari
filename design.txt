@@ -1,7 +1,9 @@
 Sphere class
 
 attributes:
-origin (double[])
+this.xValue (double)
+this.yValue (double)
+this.zValue (double)
 radius (double)
 
 methods:
@@ -12,14 +14,14 @@ volume() - returns 4*pi*pow(radius, 3)/3
 
 distanceTo(Sphere S2)
 
-  x1 = origin[0]
-  y1 = origin[1]
-  z1 = origin[2]
+  x1 = xValue
+  y1 = yValue
+  z1 = zValue
 
-  x2 = S2.origin[0]
-  y2 = S2.origin[1]
-  z2 = S2.origin[2]
+  x2 = S2.xValue
+  y2 = S2.yValue
+  z2 = S2.zValue
 
   return sqrt(pow(x1-x2, 2) + pow(y1-y2, 2) + pow(z1-z2, 2))
   
-intersectsWith(Sphere S2) - returns this.distanceTo(S2) < this.radius + S2.radius
+intersectsWith(Sphere S2) - returns this.distanceTo(S2) <= this.radius + S2.radius
