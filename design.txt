@@ -5,7 +5,21 @@ origin (double[])
 radius (double)
 
 methods:
-surfaceArea(double) - plugs it into the formula
-volume(double) - plugs it into the formula
-distanceTo(Sphere) - takes [Sphere].origin and computes the distance using the math module for the sqrt
-intersectsWith(Sphere) - returns this.distanceTo([Sphere]) > this.radius + [Sphere].radius
+
+surfaceArea() - returns 4*pi*pow(radius, 2)
+
+volume() - returns 4*pi*pow(radius, 3)/3
+
+distanceTo(Sphere S2)
+
+  x1 = origin[0]
+  y1 = origin[1]
+  z1 = origin[2]
+
+  x2 = S2.origin[0]
+  y2 = S2.origin[1]
+  z2 = S2.origin[2]
+
+  return sqrt(pow(x1-x2, 2) + pow(y1-y2, 2) + pow(z1-z2, 2))
+  
+intersectsWith(Sphere S2) - returns this.distanceTo(S2) < this.radius + S2.radius
