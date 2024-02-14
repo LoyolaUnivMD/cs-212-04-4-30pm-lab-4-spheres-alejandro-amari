@@ -1,20 +1,22 @@
-/** Programmers:  [your names here]
+/** Programmers:  Alejandro & AJ
 * Course:  CS 212
-* Due Date:
-* Lab Assignment:
-* Problem Statement:
+* Due Date: 2/18/2024
+* Lab Assignment: 4
+* Problem Statement: Create a new class named Sphere and use it to create sphere objects and to detect sphere collisions
 * Data In:
 * Data Out:
 * Credits: [Is your code based on an example in the book, in class, or something else?
 *            Reminder: you should never take code from the Internet or another person
 */
 
-import java.util.Scanner;
-
+//sun at 0.0, 0.0, 0.0 with a radius of 43.26
+//earth at 26.0, 42.0, 79.0 with a radius of 0.395
+//planetX at 25.3, 43.1, 77.8 with a radius of 1.4
 class Main {
     public static void main(String[] args) {
        System.out.println("Music of the Spheres");
-
+       Sphere sun = new Sphere(0,0,0,43.26);
+       Sphere earth = new Sphere(26,2,79,0.395);
 
     }
 }
