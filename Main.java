@@ -9,9 +9,7 @@
 *            Reminder: you should never take code from the Internet or another person]
 */
 
-//sun at 0.0, 0.0, 0.0 with a radius of 43.26
-//earth at 26.0, 42.0, 79.0 with a radius of 0.395
-//planetX at 25.3, 43.1, 77.8 with a radius of 1.4
+
 class Main {
     public static void main(String[] args) {
        System.out.println("Music of the Spheres");
