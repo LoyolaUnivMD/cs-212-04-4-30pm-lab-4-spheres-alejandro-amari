@@ -24,5 +24,5 @@ class Main {
        System.out.println("The Earth's area is" + earth.getArea() + "and it's volume is" + earth.getVolume());
        System.out.println("Planet X's area is" + planetX.getArea() + "and it's volume is" + planetX.getVolume());
 
-    }
+    } //
 }
