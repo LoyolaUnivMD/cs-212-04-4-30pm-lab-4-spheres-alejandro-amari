@@ -20,9 +20,19 @@ class Main {
        Sphere earth = new Sphere(26,2,79,0.395);
        Sphere planetX = new Sphere(25.3,43.1,77.8,1.4);
 
-       System.out.println("The Sun's area is" + sun.getArea() + "and it's volume is" + sun.getVolume());
-       System.out.println("The Earth's area is" + earth.getArea() + "and it's volume is" + earth.getVolume());
-       System.out.println("Planet X's area is" + planetX.getArea() + "and it's volume is" + planetX.getVolume());
+       System.out.println("The Sun's area is " + sun.getArea() + " and it's volume is " + sun.getVolume());
+       System.out.println("The Earth's area is " + earth.getArea() + " and it's volume is " + earth.getVolume());
+       System.out.println("Planet X's area is " + planetX.getArea() + " and it's volume is " + planetX.getVolume());
 
-    } //
+       if(earth.intersectsWith(sun) || earth.intersectsWith(planetX)){
+           System.out.println("Earth is crashing into another planet");
+       }
+       if(sun.intersectsWith(earth) || sun.intersectsWith(planetX)){
+            System.out.println("The sun is crashing into another planet");
+        }
+        if(planetX.intersectsWith(earth) || planetX.intersectsWith(sun)){
+            System.out.println("Planet X is crashing into another planet");
+        }
+
+    }
 }
