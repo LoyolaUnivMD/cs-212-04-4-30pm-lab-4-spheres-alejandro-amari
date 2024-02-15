@@ -16,10 +16,11 @@ import java.util.Scanner;
 //planetX at 25.3, 43.1, 77.8 with a radius of 1.4
 class Main {
 
-    public static double getDouble() {
+    public static double getDouble(String prompt) {
         Scanner input = new Scanner(System.in);
 
         double d = 0.0;
+        System.out.println(prompt);
         String dStr = input.nextLine();
         boolean inputRejected = true;
 
@@ -28,6 +29,7 @@ class Main {
                 d = Double.parseDouble(dStr);
                 inputRejected = false;
             } catch (Exception InvalidInput) {
+                System.out.println(prompt);
                 dStr = input.nextLine();
             }
         }
@@ -76,12 +78,9 @@ class Main {
         }
 
         System.out.println("\nUser's position:");
-        System.out.println("What is the x coordinate? ");
-        double x = Main.getDouble();
-        System.out.println("What is the y coordinate? ");
-        double y = Main.getDouble();
-        System.out.println("What is the z coordinate? ");
-        double z = Main.getDouble();
+        double x = Main.getDouble("What is the x coordinate? ");
+        double y = Main.getDouble("What is the y coordinate? ");
+        double z = Main.getDouble("What is the z coordinate? ");
 
         Sphere userObject = new Sphere(x, y, z, 0);
 
