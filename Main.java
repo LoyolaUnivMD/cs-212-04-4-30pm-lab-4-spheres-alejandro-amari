@@ -37,25 +37,6 @@ class Main {
         return d;
     }
 
-    public static double getRadius() {
-        Scanner input = new Scanner(System.in);
-
-        double r = 0.0;
-        String rStr = input.nextLine();
-        boolean inputRejected = true;
-
-        while(inputRejected) {
-            try {
-                r = Double.parseDouble(rStr);
-                inputRejected = r < 0;
-            } catch (Exception InvalidInput) {
-                rStr = input.nextLine();
-            }
-        }
-
-        return r;
-    }
-
     public static void main(String[] args) {
        System.out.println("Music of the Spheres");
 
